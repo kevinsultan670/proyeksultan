@@ -1,0 +1,236 @@
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  /* Max width for larger screens */
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin: 15px 0;
+  /* Space between project titles and descriptions */
+}
+
+p {
+  margin-bottom: 15px;
+  /* Space below paragraphs */
+}
+
+/* Section Styles */
+.section {
+  padding: 40px 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  /* Space below the main title */
+}
+
+header nav {
+  text-align: right;
+  /* Align login link to the right */
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+header nav a:hover {
+  color: #f4a261;
+}
+
+/* Navigation Menu Styles */
+/* Mengatur header untuk menggunakan flexbox */
+header .container {
+  display: flex;
+  /* Menggunakan flexbox */
+  justify-content: space-between;
+  /* Membagi ruang antara elemen */
+  align-items: center;
+  /* Menyelaraskan elemen secara vertikal */
+}
+
+/* Mengatur navbar untuk meratakan ke kanan */
+nav ul {
+  list-style: none;
+  /* Menghilangkan bullet points */
+  display: flex;
+  /* Menggunakan flexbox untuk item list */
+  justify-content: flex-end;
+  /* Meratakan item ke kanan */
+  padding: 0;
+  /* Menghilangkan padding */
+}
+
+nav ul li {
+  margin: 0 15px;
+  /* Memberikan margin antar item */
+}
+
+/* About Section */
+#about {
+  background-color: #f4a261;
+  color: #fff;
+}
+
+#about p {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Image Styling */
+.logo {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 50%;
+  border: 5px solid #333;
+}
+
+/* Projects Section */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Fleksibel untuk ukuran kolom */
+  gap: 20px; /* Jarak antar elemen grid */
+  margin-top: 20px; /* Jarak atas dari judul */
+}
+
+.project {
+  background-color: #fff; /* Latar belakang putih */
+  padding: 20px; /* Spasi di dalam setiap elemen */
+  border: 1px solid #ddd; /* Batas abu-abu */
+  border-radius: 5px; /* Sudut melengkung */
+  text-align: center; /* Teks rata tengah */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+.project h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem; /* Ukuran font besar */
+  color: #333; /* Warna teks utama */
+}
+
+.project p {
+  font-size: 1rem; /* Ukuran font deskripsi */
+  color: #666; /* Warna teks deskripsi */
+}
+
+.project .button {
+  background-color: #4caf50; /* Warna hijau */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project .button:hover {
+  background-color: #45a049; /* Warna hijau gelap saat hover */
+}
+
+/* Contact Section */
+#contact ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  /* Remove default padding */
+}
+
+#contact ul li {
+  margin: 10px 0;
+}
+
+#contact ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#contact ul li a:hover {
+  color: #f4a261;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+.center-text {
+  text-align: center;
+  /* Menengahkan teks */
+  margin: 20px 0;
+  /* Memberikan jarak atas dan bawah */
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.button {
+  background-color: #4caf50; /* Hijau */
+  color: white; /* Teks putih */
+  padding: 10px 20px; /* Padding tombol */
+  border: none; /* Tanpa border */
+  border-radius: 5px; /* Sudut melengkung */
+  cursor: pointer; /* Tanda kursor saat hover */
+  font-size: 16px; /* Ukuran font */
+  margin-top: 10px; /* Jarak atas */
+}
+
+.button:hover {
+  background-color: #45a049; /* Warna tombol saat hover */
+}

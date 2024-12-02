@@ -1,0 +1,37 @@
+.certificates-grid {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-around; /* Space out the certificates evenly */
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  margin: 20px 0; /* Add some margin for spacing */
+}
+
+.certificate {
+  text-align: center; /* Center text and buttons in each certificate box */
+  margin: 10px; /* Add some margin between each certificate */
+  width: 200px; /* Optional: Set a fixed width for each certificate */
+}
+
+.certificate-image {
+  max-width: 150px; /* Limit the image width */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #ddd; /* Optional: Add a border to images */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.button {
+  margin-top: 10px; /* Add space between the image and the button */
+  padding: 10px 20px; /* Add padding for the button */
+  background-color: #4caf50; /* Button color */
+  color: white; /* Text color for button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Change cursor on hover */
+  display: block; /* Ensure the button is a block element */
+  margin-left: auto; /* Center the button */
+  margin-right: auto; /* Center the button */
+}
+
+.button:hover {
+  background-color: #45a049; /* Darken button color on hover */
+}

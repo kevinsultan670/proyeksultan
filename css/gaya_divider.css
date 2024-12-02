@@ -1,0 +1,9 @@
+/* Section Divider Styles */
+.section-divider {
+  width: calc(100% + 80px); /* Increase the width to extend the line */
+  height: 3px;
+  background: linear-gradient(to right, #ff8a00, #e52e71);
+  margin: 40px -40px; /* Negative margins to pull the line out on both sides */
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}

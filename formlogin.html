@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From Login</title>
+    <link rel="stylesheet" href="css/formlogin.css" />
+    <!-- Corrected file path -->
+  </head>
+
+  <body class="light-mode">
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <a href="#">Masuk AH!</a>
+        <button id="toggle-mode" aria-label="Toggle Dark/Light Mode">
+          <img
+            src="Gambarkomik/matahari anjay.png"
+            alt="Light Mode"
+            class="mode-icon"
+          />
+          <img
+            src="Gambarkomik/bulan aja.png"
+            alt="Dark Mode"
+            class="mode-icon"
+            style="display: none"
+          />
+        </button>
+      </nav>
+    </header>
+
+    <!-- Welcome Message -->
+    <section>
+      <h1>Selamat Datang Di Website Sultan Aji Saputra</h1>
+    </section>
+
+    <!-- Image Section -->
+    <section>
+      <img src="Gambarkomik/sultanke2.jpg" alt="Gambarsultanke2" class="logo" />
+    </section>
+
+    <!-- Login Form -->
+    <section>
+      <h2>Eits! Sebelum Masuk Isi Password Dulu Yak:</h2>
+      <form action="protofolio.html" method="get">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="nim">Nim:</label>
+        <input type="text" id="nim" name="nim" required />
+
+        <input type="submit" value="Login" />
+      </form>
+    </section>
+
+    <!-- Link to External JavaScript File -->
+    <script src="js/togle-mode.js"></script>
+  </body>
+</html>
